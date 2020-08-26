@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sale of body parts</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">логотип</div>
+            <nav class="nav">
+                <div class="nav__phone">8 800 232 32 12</div>
+                <div class="nav__order"><a href="#" class="js-open-modal" data-modal="3">Заказать обратный звонок</a></div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Продажа кузовных запчастей</h1>
+            <h2 class="intro__subtitle">с заводской покраской без пробега по РФ</h2>
+            <div class="intro__advantage">
+                <div class="intro__item">
+                    <div class="intro__item__logo"><img src="images/3.png" alt=""></div>
+                    <div class="intro__text">
+                        <p>Доставка по РФ <br> от 3-x дней</p>
+                    </div>
+                </div>
+                <div class="intro__item">
+                    <div class="intro__item__logo intro__item__logo--star"><img src="images/2.png" alt=""></div>
+                    <div class="intro__text intro__text--star">
+                        <p>Новое состояние <br> по цене б/у</p>
+                    </div>
+                </div>
+                <div class="intro__item">
+                    <div class="intro__item__logo"><img src="images/1.png" alt=""></div>
+                    <div class="intro__text">
+                        <p>Наличие более 500 <br> различных деталей</p>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__request">
+                <div class="intro__button">
+                    <a href="#" class="js-open-modal " data-modal="1" ><button class="but__req but">Быстрая заявка</button></a>
+                    <p>Мы перезвоним Вам <br> для уточнения деталей</p>
+                </div>
+                <div class="intro__button">
+                    <button id="scroll" class="but__req but">Подробная заявка</button>
+                    <p>Заполните подробную <br> заявку онлайн</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal" data-modal="1">
+            <h1 class="popup__title">Быстрая заявка</h1>
+            <p class="popup__subtitle">Оставьте заявку и мы Вам перезвоним!</p>
+            <input type="text" class="popup__inp" placeholder="Ваше имя" required>
+            <input type="tel" class="popup__inp" placeholder="Ваш телефон" required>
+    <button class="popup__but but js-modal-close" data-modal="2">Отправить заявку</button>
+            <a href="#" class="js-modal-close"><i class="fas fa-times"></i></a>
+</div>
+
+<div class="modal modal--thx" data-modal="2">
+    <h1 class="popup__title">Спасибо за вашу заявку!</h1>
+    <p class="popup__subtitle">Мы свяжемся с Вами в ближайшее <br> время!</p>
+    <a href="#" class="js-modal-close"><i class="fas fa-times"></i></a>
+</div>
+
+<div class="modal modal--email" data-modal="3">
+    <h1 class="popup__title">Быстрая заявка</h1>
+    <p class="popup__subtitle">Оставьте заявку и мы Вам перезвоним!</p>
+    <input type="text" class="popup__inp" placeholder="Ваше имя" required>
+    <input type="tel" class="popup__inp" placeholder="Ваш телефон" required>
+    <input type="email" class="popup__inp" placeholder="Вашa почта" required>
+    <button class="popup__but but js-modal-close" data-modal="2">Отправить заявку</button>
+    <a href="#" class="js-modal-close"><i class="fas fa-times"></i></a>
+</div>
+
+<div class="popup" id="overlay-modal"></div>
+
+<section class="section">
+    <div class="container">
+        <div class="section__inner">
+            <div class="section__item">
+                <div class="item__image">
+                    <img src="images/images/1_05.jpg" alt="1_05">
+                </div>
+                <div class="item__title">
+                    <h2>Более 1000 наименований</h2>
+                </div>
+                <div class="item__text">
+                    <p>Возможность заказа и подбора более чем по 2000 наименований деталей</p>
+                </div>
+            </div>
+            <div class="section__item section__item--car">
+                <div class="item__image">
+                    <img src="images/images/1_07.jpg" alt="1_07">
+                </div>
+                <div class="item__title">
+                    <h2>Доставка в любой регион РФ</h2>
+                </div>
+                <div class="item__text">
+                    <p>Мы работаем с любой транспортной компанией и осуществляем доставку в любой регион РФ</p>
+                </div>
+            </div>
+            <div class="section__item">
+                <div class="item__image">
+                    <img src="images/images/1_09.jpg" alt="1_09">
+                </div>
+                <div class="item__title">
+                    <h2>Новое состояние деталей</h2>
+                </div>
+                <div class="item__text">
+                    <p>Наши детали не были в употреблении и имеют состояние новых</p>
+                </div>
+            </div>
+            <div class="section__item">
+                <div class="item__image">
+                    <img src="images/images/1_15.jpg" alt="1_15">
+                </div>
+                <div class="item__title">
+                    <h2>Европейское качество</h2>
+                </div>
+                <div class="item__text">
+                    <p>Все наши детали привезены из Европы, что гарантирует отличное качество</p>
+                </div>
+            </div>
+            <div class="section__item section__item--car">
+                <div class="item__image">
+                    <img src="images/images/1_18.jpg" alt="1_18">
+                </div>
+                <div class="item__title">
+                    <h2>Работаем по договору</h2>
+                </div>
+                <div class="item__text">
+                    <p>Все, что мы делаем - официально. Мы заключаем договор купли-продажи и предоставляем все необходимые документы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="scrollTo" class="section section--request">
+    <div class="container">
+        <div class="request">
+            <div class="section__title">
+                <h1>Подробная заявка</h1>
+            </div>
+            <div class="section__subtitle">
+                <h2>Заполните форму и получите максимально точную цену!</h2>
+            </div>
+            <div class="form">
+                <div class="form__item">
+                    <div class="brand">
+                        <p class="item__title">Марка:</p>
+                        <div class="accordion">
+                            <p class="accordion__text">Выберите марку</p>
+                            <i class="fas fa-caret-down accordion__arrow"></i>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <p class="item__title">Модель:</p>
+                        <div class="accordion">
+                            <p class="accordion__text">Выберите модель</p>
+                            <i class="fas fa-caret-down accordion__arrow"></i>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <p class="item__title">Год выпуска:</p>
+                        <div class="accordion">
+                            <p class="accordion__text">Выберите год</p>
+                            <i class="fas fa-caret-down accordion__arrow"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="item__details">
+                        <p class="item__title">Необходимые детали:</p>
+                        <label>
+                            <textarea  name="comment" cols="40" rows="3" placeholder="Введите" ></textarea>
+                        </label>
+                    </div>
+                    <div class="item__name">
+                        <p class="item__title">Ваше имя:</p>
+                        <input type="text" placeholder="Введите" required>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <div class="item__phone">
+                        <p class="item__title">Ваш телефон:</p>
+                        <input type="tel" required>
+                    </div>
+                    <div class="item__e-mail">
+                        <p class="item__title">Ваш e-mail:</p>
+                        <input type="email" required>
+                    </div>
+                    <button class="but item__but js-open-modal" data-modal="2">Узнать цену</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="about">
+            <div class="section__title">
+                <h1>Имеем в наличии детали на авто:</h1>
+            </div>
+            <div class="emblems">
+                <div class="f-emblems">
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_05.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_06_05.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_052.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_07_05.jpg" alt=""></div>
+                    <div class="f-emblems__img f-emblems__img-jag"><img src="images/images/кузовной-ремон_11.jpg" alt=""></div>
+                </div>
+                <div class="f-emblems">
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_17.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_20.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_21_20.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_201.jpg" alt=""></div>
+                </div>
+                <div class="f-emblems">
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_331.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_34_33.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_34.jpg" alt=""></div>
+                    <div class="f-emblems__img"><img src="images/images/кузовной-ремон_33.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="section__title">
+                <h1>Вы можете посмотреть что у нас происходит!</h1>
+            </div>
+            <div class="look">
+                <iframe src="" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--request">
+    <div class="container">
+        <div class="section__title">
+            <h1>Клиенты о нас</h1>
+        </div>
+        <div class="clients">
+            <div class="clients__item">
+                    <img src="http://placehold.it/100x100" class="clients__image" alt="100x100">
+                <div class="clients__content">
+                    <h2 class="clients__name">Иван Иванович</h2>
+                    <p class="clients__info">Не могу найти фару для авто</p>
+                    <p class="clients__request">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</p>
+                </div>
+            </div>
+            <div class="clients__item">
+                <img src="http://placehold.it/100x100" class="clients__image" alt="100x100">
+                <div class="clients__content">
+                    <h2 class="clients__name">Иван Иванович</h2>
+                    <p class="clients__info">Не могу найти фару для авто</p>
+                    <p class="clients__request">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</p>
+                </div>
+            </div><div class="clients__item">
+            <img src="http://placehold.it/100x100" class="clients__image" alt="100x100">
+            <div class="clients__content">
+                <h2 class="clients__name">Иван Иванович</h2>
+                <p class="clients__info">Не могу найти фару для авто</p>
+                <p class="clients__request">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</p>
+            </div>
+        </div>
+            <div class="clients__item">
+                <img src="http://placehold.it/100x100" class="clients__image" alt="100x100">
+                <div class="clients__content">
+                    <h2 class="clients__name">Иван Иванович</h2>
+                    <p class="clients__info">Не могу найти фару для авто</p>
+                    <p class="clients__request">“ Мотордеталь в широком ассортименте по ценам от известного дистрибьютора автозапчастей. ООО "РАДИАТОР" пользуется заслуженным уважением среди покупателей, благодаря высокому сервису, скидкам, отличному качеству продукции.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--cons">
+    <div class="container">
+        <div class="consultation">
+            <div class="section__title">
+                <h1>Нужна консультация?</h1>
+            </div>
+            <div class="section__subtitle">
+                <h2>Заполните форму и получите максимально точную цену!</h2>
+            </div>
+            <div class="pattern">
+                <form>
+                    <div class="fields">
+                        <div class="pattern__name">
+                            <p>Ваше имя:</p>
+                            <input type="text" required>
+                        </div>
+                        <div class="pattern__name">
+                            <p>Ваша фамилия:</p>
+                            <input type="text" required>
+                        </div>
+                    </div>
+                    <div class="pat">
+                        <button class="pattern__but js-open-modal" data-modal="2">Заказать консультацию</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--map">
+    <div class="container">
+        <div class="map">
+            <div class="contacts">
+                <h1 class="map__title">Контакты</h1>
+                <p class="map__address">г. Москва, ул. Дорожная, 8, к.1</p>
+                <p class="map__phone">8 800 123 43 34</p>
+                <a class="map__e-mail">info@sitename.ru</a>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">логотип</div>
+            <nav class="nav">
+                <div class="footer__phone">8 800 232 32 12</div>
+                <div class="nav__order"><a href="#" class="js-open-modal" data-modal="3">Заказать обратный звонок</a></div>
+            </nav>
+        </div>
+    </div>
+</footer>
+<script src="script/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>
